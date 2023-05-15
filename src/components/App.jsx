@@ -27,12 +27,6 @@ export default function App() {
   //   localStorage.setItem('contacts', JSON.stringify(contacts));
   // }, [contacts]);
 
-  // const filterChange = e => {
-  //   const { value } = e.currentTarget;
-
-  //   setFilter(value);
-  // };
-
   // const getVisibleContacts = () => {
   //   const normalizeFilter = filter.toLocaleLowerCase();
 
