@@ -1,14 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { createAction, createReducer } from '@reduxjs/toolkit';
+import { contactsReducer } from './contactsSlice';
 
-export const addContact = createAction('contacts/addContact');
-export const delContact = createAction('contacts/delContact');
-
-const contactsReducer = createReducer([], {
-  [addContact]: (state, action) => [...state, action.payload],
-  [delContact]: (state, action) =>
-    state.filer(contact => contact.id !== action.payload),
+export const store = configureStore({
+  reducer: {
+    contacts: contactsReducer,
+  },
 });
+
 // const initialState = {
 //   contacts: [
 //     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -18,9 +16,3 @@ const contactsReducer = createReducer([], {
 //   ],
 //   filter: '',
 // };
-
-export const store = configureStore({
-  reducer: {
-    contacts: contactsReducer,
-  },
-});
