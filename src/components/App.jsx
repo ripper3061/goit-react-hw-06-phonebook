@@ -5,7 +5,7 @@ import { getContacts } from 'redux/selectors';
 import { Section } from './Section/Section';
 import ContactForm from './ContactForm/ContactForm';
 // import { ContactsList } from './ContactList/ContactList';
-// import { Filter } from './Filter/Filter';
+import { Filter } from './Filter/Filter';
 import { AppSection } from './App.styled';
 
 export default function App() {
@@ -52,7 +52,7 @@ export default function App() {
       <Section title="Phonebook">
         <ContactForm />
       </Section>
-
+      <Filter />
       {/* <Section title="Contacts">
         {contacts.length > 0 && (
           <>
