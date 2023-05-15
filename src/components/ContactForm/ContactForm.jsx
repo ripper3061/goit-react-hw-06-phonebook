@@ -13,7 +13,6 @@ export default function ContactForm({ onSubmit }) {
   const numberInputId = nanoid();
 
   const contacts = useSelector(getContacts);
-
   const dispatch = useDispatch();
 
   const handleChange = e => {

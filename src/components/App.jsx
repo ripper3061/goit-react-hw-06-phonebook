@@ -1,5 +1,3 @@
-// import { useState, useEffect } from 'react';
-// import { nanoid } from 'nanoid';
 import { useSelector } from 'react-redux';
 import { getContacts } from 'redux/selectors';
 import { Section } from './Section/Section';
