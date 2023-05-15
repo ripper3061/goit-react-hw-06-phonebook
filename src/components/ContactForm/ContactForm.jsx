@@ -43,7 +43,7 @@ export default function ContactForm({ onSubmit }) {
 
   const checkContactsName = (contacts, newContactName) => {
     const normalizedName = newContactName.toLowerCase();
-
+    console.log(contacts);
     return contacts.some(({ name }) => normalizedName === name.toLowerCase());
   };
 
